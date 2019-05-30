@@ -17,20 +17,20 @@
     <!-- Zennav styles for this template -->
     <link href="zennav.css" rel="stylesheet">
 
-    <title>Zennav 4.0.0-alpha</title>
+    <title>Zennav 4.0.1-alpha</title>
   </head>
   <body>
     <div class="sn-static">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-        <div class="container mobile-navbar">
-          <a class="navbar-brand mx-auto" href="#">Top Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-fluid d-lg-none">
+          <a class="navbar-brand mx-auto" href="#">Top navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-        <div class="collapse navbar-collapse w-100" id="navbarCollapse">
-          <div class="container d-flex flex-column flex-lg-row justify-content-between">
-            <ul class="navbar-nav ml-auto w-100 order-1 order-lg-0 justify-content-end">
+        <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+          <div class="d-flex flex-column flex-lg-row justify-content-between">
+            <ul class="navbar-nav mr-auto w-100 order-1 order-lg-0 justify-content-end">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
@@ -48,10 +48,8 @@
                 </div>
               </li>
             </ul>
-						<div class="desktop-navbar-brand order-0 order-lg-1">
-							<a class="navbar-brand mx-auto" href="#">Top Navbar</a>
-						</div>
-            <ul class="navbar-nav mr-auto w-100 order-2 order-lg-2">
+            <a class="navbar-brand mx-auto d-none d-lg-flex order-0 order-lg-1" href="#">Top navbar</a>
+            <ul class="navbar-nav ml-auto w-100 order-2 order-lg-2">
               <li class="nav-item dropdown jqui-slide">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                 <div>
@@ -61,9 +59,6 @@
                     <a class="dropdown-item" href="#"><div>Something else here</div></a>
                   </div>
                 </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
               </li>
               <li class="nav-item dropdown jqui-slide">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"></i></a>
@@ -85,21 +80,22 @@
         </div>
       </nav>
     </div>
+
     <main role="main" class="container">
       <div class="jumbotron">
         <h1>Navbar example</h1>
         <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
-        <a class="btn btn-lg btn-primary" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/components/navbar/" role="button">View navbar docs &raquo;</a>
+        <a class="btn btn-lg btn-primary" href="/docs/4.3/components/navbar/" role="button">View navbar docs &raquo;</a>
       </div>
     </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- jQueryUI (necessary for Slidenav plugin) -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- Slidenav (necessary for Zennav plugin) -->
-    <script src="zennav.js"></script>
+    <script src="centerslidenav.js"></script>
   </body>
 </html>

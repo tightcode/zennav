@@ -1,3 +1,35 @@
+/* Zennav 4.0.1-alpha ( https://github.com/tightcode/zennav ) */
+
+
+
+/* Centershadenav 0.1.1 ( https://github.com/tightcode/centershadenav ) */
+/* changed breakpoint from md to lg */
+
+
+
+/* Centernav 0.1.3 ( https://github.com/tightcode/centernav ) */
+@media (max-width: 991.98px) {
+  .navbar > .container-fluid {
+    position: relative;
+  }
+  .navbar-toggler {
+    position: absolute;
+    right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-collapse > .d-flex {
+    width: 100%;
+    position:relative;
+  }
+  .navbar-collapse .form-inline {
+    position: absolute;
+    right: 0;
+  }
+}
+
+
+
 /* Shadownav 4.0.0-alpha1 ( https://github.com/tightcode/shadownav ) */
 .navbar {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
@@ -5,37 +37,37 @@
 @media (max-width: 991.98px) {
   .dropdown {
     z-index: 0;
-    position: relative;
+		position:relative;
   }
   .dropdown>div {
     position: relative;
-    z-index: 0;
-    background-color: white;
-    border-radius: 0.25rem;
+		z-index: 0;
+		background-color: white;
+		border-radius: 0.25rem;
   }
-  .dropdown-menu {
-    background-color: initial;
-    border: 0;
-  }
-  .dropdown-menu {
-    box-shadow: inset 0 1.5rem 1rem -1rem rgba(0, 0, 0, 0.5), inset 0 -1.5rem 1rem -1rem rgba(0, 0, 0, 0.5);
-  }
-  .dropdown-item:hover, .dropdown-item:focus {
-    background-color: initial;
-  }
-  .dropdown-item:hover>div, .dropdown-item:focus>div {
-    background-color: #f8f9fa;
-  }
+	.dropdown-menu {
+		background-color: initial;
+		border: 0;
+	}	
+	.dropdown-menu {
+		box-shadow: inset 0 1.5rem 1rem -1rem rgba(0, 0, 0, 0.5), inset 0 -1.5rem 1rem -1rem rgba(0, 0, 0, 0.5);
+	}
+	.dropdown-item:hover, .dropdown-item:focus {
+		background-color: initial;
+	}
+	.dropdown-item:hover > div, .dropdown-item:focus > div {
+		background-color: #f8f9fa;
+	}
   .dropdown-menu>a>div {
     position: relative;
     z-index: -1;
   }
 }
 @media (min-width: 992px) {
-  .sn-static {
-    position: relative;
-    z-index: 0;
-  }
+	.sn-static {
+		position: relative;
+		z-index: 0;
+	}
   .sn-fixed {
     top: 0;
     position: fixed;
@@ -49,25 +81,35 @@
     top: auto;
     position: relative;
     z-index: auto;
-  }
+  }	
   .dropdown>div {
     position: absolute;
     clip: rect(0.5rem, 9999px, 9999px, -9999px);
-    z-index: -1;
+		z-index: -1;
   }
 }
 
 
 
-/* Zennav 4.0.0-alpha */
+/* Slidenav 4.0.0-alpha.1 ( https://github.com/tightcode/slidenav ) */
+@media (min-width: 992px) {
+  .dropdown>div {
+    position: absolute;
+    clip: rect(0.5rem, 9999px, 9999px, -9999px);
+  }
+}
+
+
+
+/* Zennav styles */
+/* reset property */
+@media (min-width: 992px) {
+  .navbar-collapse .form-inline {
+    position: initial;
+  }
+}
 nav a {
   transition: all .25s ease-in-out
-}
-nav .nav-item {
-  text-align: center;
-}
-nav .dropdown-item {
-  text-align: center;
 }
 nav .form-inline {
   flex-flow: row;
@@ -77,23 +119,11 @@ nav .cart {
   color: rgba(255, 255, 255, .5);
 }
 @media (max-width: 991.98px) {
-  .mobile-navbar {
-    width: 100%;
-    position: relative;
-    justify-content: center;
-    visibility: visible;
-    opacity: 1;
-    display: flex!important;
+  nav .nav-item {
+    text-align: center;
   }
-  .navbar-toggler {
-    position: absolute;
-    right: 0;
-    margin-right: 15px;
-  }
-  .desktop-navbar-brand {
-    visibility: hidden;
-    opacity: 0;
-    display: none!important;
+  nav .dropdown-item {
+    text-align: center;
   }
 }
 @media (min-width: 576px) {
@@ -103,27 +133,16 @@ nav .cart {
   }
 }
 @media (min-width: 992px) {
-  .mobile-navbar {
-    visibility: hidden;
-    opacity: 0;
-    display: none!important;
-  }
-  #navbarCollapse .container {
-    position: relative;
-  }
-  .desktop-navbar-brand {
-    visibility: visible;
-    opacity: 1;
-    display: initial!important;
-  }
   .navbar-nav .dropdown div {
     right: 0;
     left: auto;
+    text-align: right;
   }
   .navbar-nav:first-child .dropdown div {
     right: auto;
     left: 0;
-  }
+    text-align: left;
+  }  
   nav .form-inline .form-control {
     display: inline-block;
     width: auto;
