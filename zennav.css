@@ -1,4 +1,4 @@
-/* Zennav 4.0.1-alpha ( https://github.com/tightcode/zennav ) */
+/* Zennav 4.0.1-alpha.1 ( https://github.com/tightcode/zennav ) */
 
 
 
@@ -154,6 +154,5 @@ nav .cart {
   nav .btn-primary {
     position: absolute;
     right: 0;
-    margin-right: 15px;
   }
 }
