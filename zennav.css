@@ -1,8 +1,13 @@
-/* Zennav 4.0.1-alpha.2 ( https://github.com/tightcode/zennav ) */
+/* Zennav 4.0.1-alpha.3 ( https://github.com/tightcode/zennav ) */
 
 
 
-/* Centershadenav 0.1.1 ( https://github.com/tightcode/centershadenav ) */
+/* Centershadenav 0.1.2 ( https://github.com/tightcode/centershadenav ) */
+/* changed breakpoint from md to lg */
+
+
+
+/* Centerslidenav 0.1.4 ( https://github.com/tightcode/centerslidenav ) */
 /* changed breakpoint from md to lg */
 
 
@@ -91,7 +96,7 @@
 
 
 
-/* Slidenav 4.0.0-alpha.1 ( https://github.com/tightcode/slidenav ) */
+/* Slidenav 4.0.0-alpha.5 ( https://github.com/tightcode/slidenav ) */
 @media (min-width: 992px) {
   .dropdown>div {
     position: absolute;
